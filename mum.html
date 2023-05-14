@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        #heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+            margin: 50px auto 0;
+            animation: beat 1s infinite;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin :100% 100%;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1);
+            }
+            
+            50% {
+                transform: scale(1.2);
+            }
+            
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>我爱我的妈妈</h1>
+    <p>妈妈，您是我生命中最重要的人。您给了我生命，教育了我，关心了我，支持了我。您总是为我牺牲，为我快乐，为我骄傲。您是我最好的朋友，最亲爱的家人，最伟大的榜样。您是我最敬佩的女性，最美丽的天使，最甜蜜的诗歌。</p>
+    <p>妈妈，您的爱是无价的，无条件的，无限的。您的爱是温暖的，深刻的，真诚的。您的爱是我的力量，我的灵感，我的幸福。没有您的爱，我就不会有今天。没有您的爱，我就不会有明天。没有您的爱，我就不会有未来。</p>
+    <p>妈妈，感谢您一直在我身边。感谢您一直给我信心。感谢您一直给我鼓励。感谢您一直给我智慧。感谢您一直给我快乐。感谢您一直给我爱。</p>
+    <div id="heart"></div>
+    <script>
+        // 您可以在这里添加一些JavaScript代码来增加网页的互动性
+    </script>
+</body>
+</html>
